@@ -17,6 +17,7 @@ document.getElementById("hover-area").addEventListener("mouseover", function(e) 
 // QUESTION 4
 
 document.getElementById("login").addEventListener("submit", function(e) {
+    e.preventDefault();
     let password = document.getElementById("password").value;
     if (password != "12345678") {
         alert("Incorrect Password!")
