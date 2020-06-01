@@ -20,8 +20,9 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
     e.preventDefault();
     let password = document.getElementById("password").value;
     if (password != "12345678") {
-        alert("Incorrect Password!")
+        document.getElementById("login").innerText = "Please sign in";
+        alert("Incorrect Password!");
     } else {
-        document.getElementById("login").innerText = "Successfully logged in!"
+        document.getElementById("login").innerText = "Successfully logged in!";
     }
 });
